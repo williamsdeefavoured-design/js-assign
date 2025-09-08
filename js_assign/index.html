@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>1ST JS ASSIGNMENT</title>
+</head>
+<body>
+
+    <div id="blurbg" class="all-content">
+        <div class="form-container">
+        <h2>Get signed up</h2>
+
+        <form action="script.js" method="get">
+
+
+       
+            <div>
+                <input type="text" name="Name" id="fullName" placeholder="Full Name" required>
+            </div>
+
+
+            <div>
+               <input type="email" name="Email" id="email"placeholder="Email" required>
+            </div>
+
+            <div>
+               <select name="Age" id="age">
+                <option value="Age">-Your Age-</option>
+                <option value="under 18">Under 18</option>
+                <option value="18 & Above">18 & Above</option>
+                <option value="early 50s">Early 50s</option>
+               </select>
+            </div>
+   
+            <div>
+                <input type="tel"name="Phone" id="number" placeholder="Your Number" required>
+            </div>
+
+            <div>
+                <input type="text"name="City" id="city" placeholder="Your Location" required>
+            </div>
+
+            <div>
+                <input type="text" name="Skill" id="skill" placeholder="Skill/Profession" required>
+            </div>
+            <br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+
+    </div>
+    
+    
+    <main id="main">
+        <h1>Lets Check if your data is correct</h1>
+        <div id="data"></div>
+        
+        <div id="btn"><a href="index.html">Confirm</a></div>
+    </main>
+
+
+    <script src="./script.js">const person = {
+    name : "Williams David",
+    age : 50,
+    city : "Ado-Ekiti",
+
+    introduce() {
+      console.log(`Hi there, my name is ${person.name}, and im ${person.age}, also... i stay in the city of ${person.city}`);
+    }
+    };
+    </script>
+</body>
+</html>
