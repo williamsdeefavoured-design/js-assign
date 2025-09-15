@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    height: 100vh;
+}
+h1{
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    font-family: "Bungee";
+    color: rgb(255, 255, 255);
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(225deg , #EC9F05, #FF4E00 );
+    box-shadow: 15px 15px;
+    position: relative;
+    top: 0;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 6%;
+    border-radius: 5px;
+    padding-bottom: 10%;
+    transition: ease-in-out 0.7s;
+    padding-top: 50px;
+}
+
+.todo-container:hover{
+    top: -16px;
+}
+
+ul{
+    /* display: flex; */
+    /* list-style: none; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px 180px 7px 180px;
+    font-family: cursive;
+    color: white;
+    /* background-color: aqua; */
+}
+
+
+li{
+    padding: 5px 3px 5px 3px;
+    margin-bottom: 10px;
+}
+
+textarea{
+   max-width: 400px;
+   max-height: 300px;
+   min-height: 100px;
+   min-width: 200px;
+   font-family: cursive;
+}
+
+
+.lined-textarea {
+        background-attachment: local; /* Ensures background scrolls with content */
+        background-image:
+            repeating-linear-gradient(
+                white, white 25px, /* Line color and spacing for content */
+                #ccc 25px, #ccc 26px, /* Line color and thickness */
+                white 26px
+            );
+        line-height: 26px; /* Adjust to match the line spacing */
+        padding: 5px 10px; /* Add some padding for better readability */
+        border: 1px solid #ccc; /* Optional: Add a border */
+        font-family: cursive; /* Optional: Fixed-width font can look good with lines */
+        resize: vertical; /* Allow vertical resizing, if desired */
+}
+
+.btns{
+    padding-top: 5px;
+}
+
+#addItem{
+    margin-right: 160px;
+}
+
+.btn-style{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #fff7e6;
+    font-family: cursive;
+    transition: background 0.5s ease-in-out, transform 0.3s ease;
+}
+
+.btn-style:hover{
+    background: #ffd000;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
